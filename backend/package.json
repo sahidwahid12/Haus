@@ -1,0 +1,14 @@
+{
+  "name": "haus-ssh-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WebSocket-to-root-SSH bridge for the Haus runtime (separate from the per-user non-root shell).",
+  "main": "ssh-bridge.js",
+  "scripts": {
+    "start": "node ssh-bridge.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0",
+    "ssh2": "^1.16.0"
+  }
+}

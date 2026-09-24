@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+pyjwt
+httpx
+websockets

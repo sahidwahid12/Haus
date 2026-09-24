@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Haus</string>
+
+    <!-- Login -->
+    <string name="login_title">Haus</string>
+    <string name="login_subtitle">Sign in to your private terminal</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button">Sign in</string>
+    <string name="login_to_register">New here? Create an account</string>
+    <string name="login_forgot">Forgot password?</string>
+    <string name="login_required_fields">Username and password are required</string>
+
+    <!-- Register -->
+    <string name="register_title">Create your account</string>
+    <string name="register_subtitle">One private container per account</string>
+    <string name="register_email_hint">Email (for password recovery)</string>
+    <string name="register_confirm_hint">Confirm password</string>
+    <string name="register_button">Create account</string>
+    <string name="register_to_login">Already have an account? Sign in</string>
+    <string name="register_required">All fields are required</string>
+    <string name="register_password_mismatch">Passwords do not match</string>
+    <string name="register_username_invalid">Username must be 3–20 chars: a–z, 0–9, _</string>
+    <string name="register_password_short">Password must be at least 6 characters</string>
+    <string name="register_email_invalid">Enter a valid email address</string>
+
+    <!-- Forgot password -->
+    <string name="forgot_title">Reset your password</string>
+    <string name="forgot_subtitle">We\'ll email a 6-digit code to the address on file</string>
+    <string name="forgot_send_button">Send code</string>
+    <string name="forgot_code_hint">6-digit code</string>
+    <string name="forgot_new_password_hint">New password</string>
+    <string name="forgot_reset_button">Update password</string>
+    <string name="forgot_back">Back to sign in</string>
+    <string name="forgot_sent_generic">If the account exists, a code was sent</string>
+    <string name="forgot_code_short">Enter the 6-digit code</string>
+    <string name="forgot_username_required">Enter your username</string>
+    <string name="forgot_reset_done">Password updated · please sign in again</string>
+
+    <!-- Terminal -->
+    <string name="terminal_logout">Logout</string>
+    <string name="terminal_reconnect">Reconnect</string>
+    <string name="terminal_keys_show">Keys</string>
+    <string name="terminal_keys_hide">Hide</string>
+    <string name="terminal_status_connecting">… Connecting</string>
+    <string name="terminal_status_connected">● Connected</string>
+    <string name="terminal_status_disconnected">● Disconnected</string>
+    <string name="terminal_status_error">● Connection error</string>
+    <string name="terminal_status_reconnecting">↻ Reconnecting (%1$d)</string>
+    <string name="terminal_open_web_ui">Open Web UI</string>
+    <string name="router_unavailable">9Router is unavailable. Start it on port 20128 first.</string>
+
+    <!-- Errors -->
+    <string name="err_network">Network error</string>
+    <string name="err_unknown">Something went wrong</string>
+</resources>

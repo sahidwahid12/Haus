@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Haus palette: dark slate background with bright-green accent
+         inspired by Termux's high-contrast terminal look. -->
+    <color name="haus_black">#FF000000</color>
+    <color name="haus_white">#FFE6EDF3</color>
+
+    <!-- Surfaces -->
+    <color name="haus_bg">#0A0C10</color>
+    <color name="haus_bg_elevated">#10141A</color>
+    <color name="haus_surface">#161B22</color>
+    <color name="haus_surface_high">#1F2630</color>
+    <color name="haus_divider">#22272E</color>
+
+    <!-- Accent (Haus green) -->
+    <color name="haus_accent">#00E676</color>
+    <color name="haus_accent_pressed">#00B85C</color>
+    <color name="haus_accent_on">#0A0C10</color>
+
+    <!-- Text -->
+    <color name="haus_text_primary">#E6EDF3</color>
+    <color name="haus_text_secondary">#8B949E</color>
+    <color name="haus_text_disabled">#6E7681</color>
+
+    <!-- Notice surfaces -->
+    <color name="haus_notice_success_bg">#103A28</color>
+    <color name="haus_notice_error_bg">#3A191B</color>
+
+    <!-- Material 3 theme tokens -->
+    <color name="md_primary">#00E676</color>
+    <color name="md_on_primary">#0A0C10</color>
+    <color name="md_primary_container">#003821</color>
+    <color name="md_on_primary_container">#7BFFAE</color>
+    <color name="md_secondary">#8B949E</color>
+    <color name="md_on_secondary">#0A0C10</color>
+    <color name="md_background">#0A0C10</color>
+    <color name="md_on_background">#E6EDF3</color>
+    <color name="md_surface">#10141A</color>
+    <color name="md_on_surface">#E6EDF3</color>
+    <color name="md_surface_variant">#161B22</color>
+    <color name="md_on_surface_variant">#8B949E</color>
+    <color name="md_error">#FF7B72</color>
+    <color name="md_on_error">#0A0C10</color>
+    <color name="md_outline">#22272E</color>
+
+    <!-- Key bar -->
+    <color name="haus_key_bg">#161B22</color>
+    <color name="haus_key_active">#00E676</color>
+    <color name="haus_key_border">#22272E</color>
+
+    <!-- Launcher adaptive-icon background -->
+    <color name="haus_launcher_bg">#0A0C10</color>
+</resources>

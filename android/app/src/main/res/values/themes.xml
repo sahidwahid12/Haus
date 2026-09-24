@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Haus" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_primary</item>
+        <item name="colorOnPrimary">@color/md_on_primary</item>
+        <item name="colorPrimaryContainer">@color/md_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/md_on_primary_container</item>
+        <item name="colorSecondary">@color/md_secondary</item>
+        <item name="colorOnSecondary">@color/md_on_secondary</item>
+        <item name="android:colorBackground">@color/md_background</item>
+        <item name="colorOnBackground">@color/md_on_background</item>
+        <item name="colorSurface">@color/md_surface</item>
+        <item name="colorOnSurface">@color/md_on_surface</item>
+        <item name="colorSurfaceVariant">@color/md_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/md_on_surface_variant</item>
+        <item name="colorError">@color/md_error</item>
+        <item name="colorOnError">@color/md_on_error</item>
+        <item name="colorOutline">@color/md_outline</item>
+
+        <item name="android:statusBarColor">@color/haus_bg</item>
+        <item name="android:navigationBarColor">@color/haus_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Filled primary button (green) -->
+    <style name="Haus.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">@color/haus_accent</item>
+        <item name="android:textColor">@color/haus_accent_on</item>
+    </style>
+
+    <!-- Outlined button -->
+    <style name="Haus.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeColor">@color/haus_key_border</item>
+        <item name="android:textColor">@color/haus_text_primary</item>
+    </style>
+
+    <!-- Text button (link) -->
+    <style name="Haus.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/haus_accent</item>
+    </style>
+
+    <!-- Heading text -->
+    <style name="Haus.Text.Heading" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/haus_text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Haus.Text.Subheading" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/haus_text_secondary</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Haus.InputBox" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/haus_accent</item>
+        <item name="hintTextColor">@color/haus_text_secondary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+    </style>
+</resources>

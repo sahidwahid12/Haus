@@ -1,0 +1,19 @@
+# Local SDK / build config (machine-specific paths)
+android/local.properties
+*.iml
+.idea/
+.gradle/
+android/app/build/
+android/build/
+backend/__pycache__/
+
+# Build artifacts — APKs are distributed via GitHub Releases, not committed
+*.apk
+
+# Secrets / sensitive runtime files (never commit these)
+haus_root_key
+root_ssh_key
+*.key
+*.pem
+smtp.env
+.env

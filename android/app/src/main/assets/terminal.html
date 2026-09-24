@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="xterm.css" />
+    <style>
+        html, body { margin: 0; height: 100%; background: #0A0C10; overflow: hidden; }
+        #term { width: 100%; height: 100%; padding: 4px 4px 0 4px; box-sizing: border-box; }
+        .xterm { padding: 0; }
+    </style>
+</head>
+<body>
+    <div id="term"></div>
+    <script src="xterm.js"></script>
+    <script src="xterm-addon-fit.js"></script>
+    <script>
+        const term = new Terminal({
+            cursorBlink: true,
+            fontSize: 14,
+            fontFamily: 'Menlo, Monaco, Consolas, "Courier New", monospace',
+            theme: {
+                background: '#0A0C10',
+                foreground: '#E6EDF3',
+                cursor: '#00E676',
+                selectionBackground: '#003821',
+                black: '#0A0C10', red: '#FF7B72', green: '#00E676',
+                yellow: '#D29922', blue: '#58A6FF', magenta: '#BC8CFF',
+                cyan: '#39C5CF', white: '#E6EDF3', brightBlack: '#6E7681'
+            }
+        });
+        const fitAddon = new FitAddon.FitAddon();
+        term.loadAddon(fitAddon);
+        term.open(document.getElementById('term'));
+
+        function fitTerminal() {
+            try { fitAddon.fit(); } catch (e) {}
+            term.focus();
+            if (window.Android) Android.onResize(term.cols, term.rows);
+        }
+        window.fitTerminal = fitTerminal;
+
+        window.writeTerminal = function (s) { term.write(s); };
+
+        term.onData(function (d) { if (window.Android) Android.onInput(d); });
+        term.onResize(function (size) { if (window.Android) Android.onResize(size.cols, size.rows); });
+
+        window.addEventListener('resize', fitTerminal);
+        // initial fit after layout settles
+        setTimeout(fitTerminal, 250);
+        setTimeout(fitTerminal, 800);
+    </script>
+</body>
+</html>
